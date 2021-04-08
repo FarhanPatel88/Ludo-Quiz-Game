@@ -44,11 +44,4 @@ subjschema.plugin(autoIncrement.plugin, {
 
 
 
-
-
-
-
-
-
-
 mongoose.model('Subjective', subjschema)
