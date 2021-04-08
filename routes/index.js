@@ -6,7 +6,7 @@ const subjective = mongoose.model('Subjective')
 /* GET home page. */
 router.get('/', function (req, res, next) {
   subjective.findOne({
-    identity: 3
+    identity: 1
   }, (err, subj) => {
     if (err) {
       return res.send({
@@ -26,14 +26,14 @@ router.get('/', function (req, res, next) {
 router.get('/questions', function (req, res, next) {
 
   let query = {
-    // identity: 1,
+    identity: 1,
     questions: "Define half adder",
     answers: "A half adder is a circuit able to add two single binary digits and provide output plus carry ",
     answer_1: "A half adder is a circuit",
-    answer_2: "able to add double binary digits",
-    answer_3: "able to add single binary digits",
+    answer_2: "able to add two double binary digits",
+    answer_3: "able to add two single binary digits",
     answer_4: "and provide output",
-    answer_5: "able to add single decimal digits",
+    answer_5: "able to add three single decimal digits",
     answer_6: "and provide output plus carry",
   }
 
