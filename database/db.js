@@ -4,7 +4,7 @@ const autoIncrement = require('mongoose-auto-increment')
 let uri = 'mongodb://localhost:27017/ludo_game'
 
 if (process.env.NODE_ENV === 'production') {
-    let uri = process.env.MONGODB_URI
+    uri = process.env.MONGODB_URI
 }
 
 let connection = mongoose.connect(uri, {
