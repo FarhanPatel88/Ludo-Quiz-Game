@@ -44,4 +44,4 @@ const subjschema = mongoose.Schema({
 
 
 
-mongoose.model('Subjective', subjschema)
+mongoose.model('subjectives', subjschema)

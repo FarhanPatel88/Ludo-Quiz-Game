@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 const mongoose = require('mongoose');
-const subjective = mongoose.model('Subjective')
+const subjective = mongoose.model('subjectives')
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
@@ -34,7 +34,7 @@ router.get('/questions', function (req, res, next) {
     answer_3: "able to add two single binary digits",
     answer_4: "and provide output",
     answer_5: "able to add three single decimal digits",
-    answer_6: "and provide output plus carry",
+    answer_6: "and provide output plus carry"
   }
 
   subjective.create(query, (err, subject) => {
@@ -43,7 +43,7 @@ router.get('/questions', function (req, res, next) {
         error: err
       })
     }
-    res.send(query)
+    res.json(subject)
   })
 })
 
