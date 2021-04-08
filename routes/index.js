@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 const mongoose = require('mongoose');
-const subjective = mongoose.model('subjectives')
+const subjective = mongoose.model('Subjective')
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
@@ -109,8 +109,5 @@ router.post('/check:id', ({
   console.log(params)
   // res.redirect('/')
 })
-
-
-
 
 module.exports = router;

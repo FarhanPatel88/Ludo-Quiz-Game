@@ -1,5 +1,4 @@
 const mongoose = require('mongoose')
-// const autoIncrement = require('mongoose-auto-increment')
 
 const subjschema = mongoose.Schema({
     identity: {
@@ -35,13 +34,4 @@ const subjschema = mongoose.Schema({
     },
 })
 
-// subjschema.plugin(autoIncrement.plugin, {
-//     model: 'Subjective',
-//     field: 'identity',
-//     startAt: 1
-// });
-
-
-
-
-mongoose.model('subjectives', subjschema)
+mongoose.model('Subjective', subjschema)
