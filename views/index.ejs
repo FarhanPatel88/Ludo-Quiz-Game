@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title><%= title %></title>
+  <link
+    href="https://fonts.googleapis.com/css?family=Montserrat:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="/stylesheets/style.css" />
+</head>
+
+<body onload="loaddata();">
+  <section id="content">
+
+    <section id="game">
+      <div id="main-div">
+        <div id="dice-1">
+          <h1> 1 </h1>
+        </div>
+        <div id="dice-2">
+          <h1> 1 </h1>
+        </div>
+        <div id="dice-3">
+          <h1> 1 </h1>
+        </div>
+        <div id="dice-4">
+          <h1> 1 </h1>
+        </div>
+
+        <% for( let index = 1; index <= 225; index++ ) { %>
+
+        <div id="div-<%= index %>"></div>
+
+        <% } %>
+      </div>
+    </section>
+
+    <section id="questions">
+
+      <div id="header">
+
+      </div>
+
+      <div id="question">
+        <h1><%= quest.questions %></h1>
+      </div>
+
+      <section id="answers">
+
+
+        <div class="temporary">
+          <div class="answer">
+            <h1><%= quest.answer_1 %> </h1>
+          </div>
+        </div>
+        <div class="temporary">
+          <div class="answer">
+            <h1><%= quest.answer_2 %> </h1>
+          </div>
+        </div>
+        <div class="temporary">
+          <div class="answer">
+            <h1><%= quest.answer_3 %> </h1>
+          </div>
+        </div>
+        <div class="temporary">
+          <div class="answer">
+            <h1><%= quest.answer_4 %> </h1>
+          </div>
+        </div>
+        <div class="temporary">
+          <div class="answer">
+            <h1><%= quest.answer_5 %> </h1>
+          </div>
+        </div>
+        <div class="temporary">
+          <div class="answer">
+            <h1><%= quest.answer_6 %> </h1>
+          </div>
+        </div>
+
+        <div id="full_answer">
+          <form action="/check:<%= quest.identity %> " method="post">
+            <input type="text" id="answer_input" placeholder="Your answer will appear here!" name="answer_box">
+            <div class="check_button">
+              <input type="submit" name="check_ans" id="checkme">
+            </div>
+          </form>
+        </div>
+
+        <% if ((count%2) === 0) { %>
+        <dialog id="modal">
+          <h2>Congrats Red! It's your turn</h2>
+          <button onclick="closeDialog();">Ok</button>
+        </dialog>
+        <% } %>
+        <% if((count%2) === 1) { %>
+        <dialog id="modal">
+          <h2>Congrats Green! It's your turn</h2>
+          <button onclick="closeDialog();">Ok</button>
+        </dialog>
+        <% } %>
+        <% if(count === 'Wrong') { %>
+        <dialog id="modal">
+          <h2>Wrong Answer! Next Player should roll the dice if applicable and answer the next question!</h2>
+          <button onclick="closeDialog();">Ok</button>
+        </dialog>
+        <% } %>
+
+      </section>
+    </section>
+  </section>
+  <script src="../javascripts/ejs.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="../javascripts/script.js"></script>
+</body>
+
+</html>

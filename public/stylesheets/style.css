@@ -1,0 +1,1158 @@
+body {
+  margin: 0;
+  padding: 0;
+  font: 14px 'Montserrat', Helvetica, Arial, sans-serif; }
+
+a {
+  color: #00b7ff; }
+
+#main-div {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 10px 5px;
+  margin: 0;
+  position: relative; }
+
+#questions {
+  width: 45%; }
+
+#content {
+  display: flex; }
+
+div div {
+  display: inline-flex;
+  background-color: white;
+  height: 58px;
+  width: 58px;
+  /* margin: 5px; */
+  justify-content: center;
+  align-items: center;
+  /* padding: 0; */
+  /* border-radius: 0; */
+  border: 0.1px solid rgba(0, 0, 0, 0.25); }
+
+div #dice-1 {
+  background-color: magenta;
+  position: absolute;
+  left: -45px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  div #dice-1 h1 {
+    cursor: pointer;
+    font-size: 28px; }
+
+div #dice-2 {
+  background-color: magenta;
+  position: absolute;
+  right: -45px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  div #dice-2 h1 {
+    cursor: pointer;
+    font-size: 28px; }
+
+div #dice-3 {
+  background-color: magenta;
+  position: absolute;
+  left: -45px;
+  bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  div #dice-3 h1 {
+    cursor: pointer;
+    font-size: 28px; }
+
+div #dice-4 {
+  background-color: magenta;
+  position: absolute;
+  right: -45px;
+  bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  div #dice-4 h1 {
+    cursor: pointer;
+    font-size: 28px; }
+
+#game {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 60px;
+  width: 50%;
+  border-right: 1px solid black;
+  height: 100vh;
+  background: linear-gradient(to left, #ad5389, #3c1053);
+  overflow: hidden; }
+
+#div-1 {
+  background-color: red;
+  border: 1px solid red; }
+
+#div-16 {
+  background-color: red;
+  border: 1px solid red; }
+
+#div-31 {
+  background-color: red;
+  border: 1px solid red; }
+
+#div-46 {
+  background-color: red;
+  border: 1px solid red; }
+
+#div-61 {
+  background-color: red;
+  border: 1px solid red; }
+
+#div-76 {
+  background-color: red;
+  border: 1px solid red; }
+
+#div-77 {
+  background-color: red;
+  border: 1px solid red; }
+
+#div-78 {
+  background-color: red;
+  border: 1px solid red; }
+
+#div-79 {
+  background-color: red;
+  border: 1px solid red; }
+
+#div-80 {
+  background-color: red;
+  border: 1px solid red; }
+
+#div-81 {
+  background-color: red;
+  border: 1px solid red; }
+
+#div-1 {
+  background-color: red;
+  border: 1px solid red; }
+
+#div-2 {
+  background-color: red;
+  border: 1px solid red; }
+
+#div-3 {
+  background-color: red;
+  border: 1px solid red; }
+
+#div-4 {
+  background-color: red;
+  border: 1px solid red; }
+
+#div-5 {
+  background-color: red;
+  border: 1px solid red; }
+
+#div-6 {
+  background-color: red;
+  border: 1px solid red; }
+
+#div-31 {
+  background-color: red;
+  border: 1px solid red; }
+
+#div-32 {
+  background-color: red;
+  border: 1px solid red; }
+
+#div-33 {
+  background-color: red;
+  border: 1px solid red; }
+
+#div-34 {
+  background-color: red;
+  border: 1px solid red; }
+
+#div-35 {
+  background-color: red;
+  border: 1px solid red; }
+
+#div-36 {
+  background-color: red;
+  border: 1px solid red; }
+
+#div-46 {
+  background-color: red;
+  border: 1px solid red; }
+
+#div-47 {
+  background-color: red;
+  border: 1px solid red; }
+
+#div-48 {
+  background-color: red;
+  border: 1px solid red; }
+
+#div-49 {
+  background-color: red;
+  border: 1px solid red; }
+
+#div-50 {
+  background-color: red;
+  border: 1px solid red; }
+
+#div-51 {
+  background-color: red;
+  border: 1px solid red; }
+
+#div-3 {
+  background-color: red;
+  border: 1px solid red; }
+
+#div-18 {
+  background-color: red;
+  border: 1px solid red; }
+
+#div-33 {
+  background-color: red;
+  border: 1px solid red; }
+
+#div-48 {
+  background-color: red;
+  border: 1px solid red; }
+
+#div-63 {
+  background-color: red;
+  border: 1px solid red; }
+
+#div-78 {
+  background-color: red;
+  border: 1px solid red; }
+
+#div-4 {
+  background-color: red;
+  border: 1px solid red; }
+
+#div-19 {
+  background-color: red;
+  border: 1px solid red; }
+
+#div-34 {
+  background-color: red;
+  border: 1px solid red; }
+
+#div-49 {
+  background-color: red;
+  border: 1px solid red; }
+
+#div-64 {
+  background-color: red;
+  border: 1px solid red; }
+
+#div-79 {
+  background-color: red;
+  border: 1px solid red; }
+
+#div-6 {
+  background-color: red;
+  border: 1px solid red; }
+
+#div-21 {
+  background-color: red;
+  border: 1px solid red; }
+
+#div-36 {
+  background-color: red;
+  border: 1px solid red; }
+
+#div-51 {
+  background-color: red;
+  border: 1px solid red; }
+
+#div-66 {
+  background-color: red;
+  border: 1px solid red; }
+
+#div-81 {
+  background-color: red;
+  border: 1px solid red; }
+
+#div-10 {
+  background-color: green;
+  border: 1px solid green; }
+
+#div-25 {
+  background-color: green;
+  border: 1px solid green; }
+
+#div-40 {
+  background-color: green;
+  border: 1px solid green; }
+
+#div-55 {
+  background-color: green;
+  border: 1px solid green; }
+
+#div-70 {
+  background-color: green;
+  border: 1px solid green; }
+
+#div-85 {
+  background-color: green;
+  border: 1px solid green; }
+
+#div-15 {
+  background-color: green;
+  border: 1px solid green; }
+
+#div-30 {
+  background-color: green;
+  border: 1px solid green; }
+
+#div-45 {
+  background-color: green;
+  border: 1px solid green; }
+
+#div-60 {
+  background-color: green;
+  border: 1px solid green; }
+
+#div-75 {
+  background-color: green;
+  border: 1px solid green; }
+
+#div-90 {
+  background-color: green;
+  border: 1px solid green; }
+
+#div-12 {
+  background-color: green;
+  border: 1px solid green; }
+
+#div-27 {
+  background-color: green;
+  border: 1px solid green; }
+
+#div-42 {
+  background-color: green;
+  border: 1px solid green; }
+
+#div-57 {
+  background-color: green;
+  border: 1px solid green; }
+
+#div-72 {
+  background-color: green;
+  border: 1px solid green; }
+
+#div-87 {
+  background-color: green;
+  border: 1px solid green; }
+
+#div-13 {
+  background-color: green;
+  border: 1px solid green; }
+
+#div-28 {
+  background-color: green;
+  border: 1px solid green; }
+
+#div-43 {
+  background-color: green;
+  border: 1px solid green; }
+
+#div-58 {
+  background-color: green;
+  border: 1px solid green; }
+
+#div-73 {
+  background-color: green;
+  border: 1px solid green; }
+
+#div-88 {
+  background-color: green;
+  border: 1px solid green; }
+
+#div-85 {
+  background-color: green;
+  border: 1px solid green; }
+
+#div-86 {
+  background-color: green;
+  border: 1px solid green; }
+
+#div-87 {
+  background-color: green;
+  border: 1px solid green; }
+
+#div-88 {
+  background-color: green;
+  border: 1px solid green; }
+
+#div-89 {
+  background-color: green;
+  border: 1px solid green; }
+
+#div-90 {
+  background-color: green;
+  border: 1px solid green; }
+
+#div-10 {
+  background-color: green;
+  border: 1px solid green; }
+
+#div-11 {
+  background-color: green;
+  border: 1px solid green; }
+
+#div-12 {
+  background-color: green;
+  border: 1px solid green; }
+
+#div-13 {
+  background-color: green;
+  border: 1px solid green; }
+
+#div-14 {
+  background-color: green;
+  border: 1px solid green; }
+
+#div-15 {
+  background-color: green;
+  border: 1px solid green; }
+
+#div-40 {
+  background-color: green;
+  border: 1px solid green; }
+
+#div-41 {
+  background-color: green;
+  border: 1px solid green; }
+
+#div-42 {
+  background-color: green;
+  border: 1px solid green; }
+
+#div-43 {
+  background-color: green;
+  border: 1px solid green; }
+
+#div-44 {
+  background-color: green;
+  border: 1px solid green; }
+
+#div-45 {
+  background-color: green;
+  border: 1px solid green; }
+
+#div-55 {
+  background-color: green;
+  border: 1px solid green; }
+
+#div-56 {
+  background-color: green;
+  border: 1px solid green; }
+
+#div-57 {
+  background-color: green;
+  border: 1px solid green; }
+
+#div-58 {
+  background-color: green;
+  border: 1px solid green; }
+
+#div-59 {
+  background-color: green;
+  border: 1px solid green; }
+
+#div-60 {
+  background-color: green;
+  border: 1px solid green; }
+
+#div-136 {
+  background-color: blue;
+  border: 1px solid blue; }
+
+#div-151 {
+  background-color: blue;
+  border: 1px solid blue; }
+
+#div-166 {
+  background-color: blue;
+  border: 1px solid blue; }
+
+#div-181 {
+  background-color: blue;
+  border: 1px solid blue; }
+
+#div-196 {
+  background-color: blue;
+  border: 1px solid blue; }
+
+#div-211 {
+  background-color: blue;
+  border: 1px solid blue; }
+
+#div-141 {
+  background-color: blue;
+  border: 1px solid blue; }
+
+#div-156 {
+  background-color: blue;
+  border: 1px solid blue; }
+
+#div-171 {
+  background-color: blue;
+  border: 1px solid blue; }
+
+#div-186 {
+  background-color: blue;
+  border: 1px solid blue; }
+
+#div-201 {
+  background-color: blue;
+  border: 1px solid blue; }
+
+#div-216 {
+  background-color: blue;
+  border: 1px solid blue; }
+
+#div-138 {
+  background-color: blue;
+  border: 1px solid blue; }
+
+#div-153 {
+  background-color: blue;
+  border: 1px solid blue; }
+
+#div-168 {
+  background-color: blue;
+  border: 1px solid blue; }
+
+#div-183 {
+  background-color: blue;
+  border: 1px solid blue; }
+
+#div-198 {
+  background-color: blue;
+  border: 1px solid blue; }
+
+#div-213 {
+  background-color: blue;
+  border: 1px solid blue; }
+
+#div-139 {
+  background-color: blue;
+  border: 1px solid blue; }
+
+#div-154 {
+  background-color: blue;
+  border: 1px solid blue; }
+
+#div-169 {
+  background-color: blue;
+  border: 1px solid blue; }
+
+#div-184 {
+  background-color: blue;
+  border: 1px solid blue; }
+
+#div-199 {
+  background-color: blue;
+  border: 1px solid blue; }
+
+#div-214 {
+  background-color: blue;
+  border: 1px solid blue; }
+
+#div-136 {
+  background-color: blue;
+  border: 1px solid blue; }
+
+#div-137 {
+  background-color: blue;
+  border: 1px solid blue; }
+
+#div-138 {
+  background-color: blue;
+  border: 1px solid blue; }
+
+#div-139 {
+  background-color: blue;
+  border: 1px solid blue; }
+
+#div-140 {
+  background-color: blue;
+  border: 1px solid blue; }
+
+#div-141 {
+  background-color: blue;
+  border: 1px solid blue; }
+
+#div-166 {
+  background-color: blue;
+  border: 1px solid blue; }
+
+#div-167 {
+  background-color: blue;
+  border: 1px solid blue; }
+
+#div-168 {
+  background-color: blue;
+  border: 1px solid blue; }
+
+#div-169 {
+  background-color: blue;
+  border: 1px solid blue; }
+
+#div-170 {
+  background-color: blue;
+  border: 1px solid blue; }
+
+#div-171 {
+  background-color: blue;
+  border: 1px solid blue; }
+
+#div-181 {
+  background-color: blue;
+  border: 1px solid blue; }
+
+#div-182 {
+  background-color: blue;
+  border: 1px solid blue; }
+
+#div-183 {
+  background-color: blue;
+  border: 1px solid blue; }
+
+#div-184 {
+  background-color: blue;
+  border: 1px solid blue; }
+
+#div-185 {
+  background-color: blue;
+  border: 1px solid blue; }
+
+#div-186 {
+  background-color: blue;
+  border: 1px solid blue; }
+
+#div-211 {
+  background-color: blue;
+  border: 1px solid blue; }
+
+#div-212 {
+  background-color: blue;
+  border: 1px solid blue; }
+
+#div-213 {
+  background-color: blue;
+  border: 1px solid blue; }
+
+#div-214 {
+  background-color: blue;
+  border: 1px solid blue; }
+
+#div-215 {
+  background-color: blue;
+  border: 1px solid blue; }
+
+#div-216 {
+  background-color: blue;
+  border: 1px solid blue; }
+
+#div-145 {
+  background-color: yellow;
+  border: 1px solid yellow; }
+
+#div-160 {
+  background-color: yellow;
+  border: 1px solid yellow; }
+
+#div-175 {
+  background-color: yellow;
+  border: 1px solid yellow; }
+
+#div-190 {
+  background-color: yellow;
+  border: 1px solid yellow; }
+
+#div-205 {
+  background-color: yellow;
+  border: 1px solid yellow; }
+
+#div-220 {
+  background-color: yellow;
+  border: 1px solid yellow; }
+
+#div-147 {
+  background-color: yellow;
+  border: 1px solid yellow; }
+
+#div-162 {
+  background-color: yellow;
+  border: 1px solid yellow; }
+
+#div-177 {
+  background-color: yellow;
+  border: 1px solid yellow; }
+
+#div-192 {
+  background-color: yellow;
+  border: 1px solid yellow; }
+
+#div-207 {
+  background-color: yellow;
+  border: 1px solid yellow; }
+
+#div-222 {
+  background-color: yellow;
+  border: 1px solid yellow; }
+
+#div-148 {
+  background-color: yellow;
+  border: 1px solid yellow; }
+
+#div-163 {
+  background-color: yellow;
+  border: 1px solid yellow; }
+
+#div-178 {
+  background-color: yellow;
+  border: 1px solid yellow; }
+
+#div-193 {
+  background-color: yellow;
+  border: 1px solid yellow; }
+
+#div-208 {
+  background-color: yellow;
+  border: 1px solid yellow; }
+
+#div-223 {
+  background-color: yellow;
+  border: 1px solid yellow; }
+
+#div-150 {
+  background-color: yellow;
+  border: 1px solid yellow; }
+
+#div-165 {
+  background-color: yellow;
+  border: 1px solid yellow; }
+
+#div-180 {
+  background-color: yellow;
+  border: 1px solid yellow; }
+
+#div-195 {
+  background-color: yellow;
+  border: 1px solid yellow; }
+
+#div-210 {
+  background-color: yellow;
+  border: 1px solid yellow; }
+
+#div-225 {
+  background-color: yellow;
+  border: 1px solid yellow; }
+
+#div-145 {
+  background-color: yellow;
+  border: 1px solid yellow; }
+
+#div-146 {
+  background-color: yellow;
+  border: 1px solid yellow; }
+
+#div-147 {
+  background-color: yellow;
+  border: 1px solid yellow; }
+
+#div-148 {
+  background-color: yellow;
+  border: 1px solid yellow; }
+
+#div-149 {
+  background-color: yellow;
+  border: 1px solid yellow; }
+
+#div-150 {
+  background-color: yellow;
+  border: 1px solid yellow; }
+
+#div-175 {
+  background-color: yellow;
+  border: 1px solid yellow; }
+
+#div-176 {
+  background-color: yellow;
+  border: 1px solid yellow; }
+
+#div-177 {
+  background-color: yellow;
+  border: 1px solid yellow; }
+
+#div-178 {
+  background-color: yellow;
+  border: 1px solid yellow; }
+
+#div-179 {
+  background-color: yellow;
+  border: 1px solid yellow; }
+
+#div-180 {
+  background-color: yellow;
+  border: 1px solid yellow; }
+
+#div-190 {
+  background-color: yellow;
+  border: 1px solid yellow; }
+
+#div-191 {
+  background-color: yellow;
+  border: 1px solid yellow; }
+
+#div-192 {
+  background-color: yellow;
+  border: 1px solid yellow; }
+
+#div-193 {
+  background-color: yellow;
+  border: 1px solid yellow; }
+
+#div-194 {
+  background-color: yellow;
+  border: 1px solid yellow; }
+
+#div-195 {
+  background-color: yellow;
+  border: 1px solid yellow; }
+
+#div-220 {
+  background-color: yellow;
+  border: 1px solid yellow; }
+
+#div-221 {
+  background-color: yellow;
+  border: 1px solid yellow; }
+
+#div-222 {
+  background-color: yellow;
+  border: 1px solid yellow; }
+
+#div-223 {
+  background-color: yellow;
+  border: 1px solid yellow; }
+
+#div-224 {
+  background-color: yellow;
+  border: 1px solid yellow; }
+
+#div-225 {
+  background-color: yellow;
+  border: 1px solid yellow; }
+
+#div-97 {
+  margin: 0;
+  padding: 0; }
+
+#div-97-1 {
+  height: 100%;
+  width: 100%;
+  clip-path: polygon(0 0, 0% 100%, 100% 100%);
+  border: 1px solid red;
+  background-color: red; }
+
+#div-97 {
+  background-color: green; }
+
+#div-107,
+#div-92 {
+  background-color: red; }
+
+#div-108,
+#div-92 {
+  background-color: red; }
+
+#div-109,
+#div-92 {
+  background-color: red; }
+
+#div-110,
+#div-92 {
+  background-color: red; }
+
+#div-111,
+#div-92 {
+  background-color: red; }
+
+#div-112,
+#div-92 {
+  background-color: red; }
+
+#div-127-1 {
+  height: 100%;
+  width: 100%;
+  clip-path: polygon(0 100%, 100% 0, 0 0);
+  border: 1px solid red;
+  background-color: red; }
+
+#div-127 {
+  background-color: blue; }
+
+#div-113 {
+  border-left: 1px solid red;
+  height: 0;
+  width: 0;
+  border-color: green yellow blue red;
+  border-width: 30px; }
+
+#div-23,
+#div-24 {
+  background-color: green; }
+
+#div-38,
+#div-24 {
+  background-color: green; }
+
+#div-53,
+#div-24 {
+  background-color: green; }
+
+#div-68,
+#div-24 {
+  background-color: green; }
+
+#div-83,
+#div-24 {
+  background-color: green; }
+
+#div-98,
+#div-24 {
+  background-color: green; }
+
+#div-128,
+#div-202 {
+  background-color: blue; }
+
+#div-143,
+#div-202 {
+  background-color: blue; }
+
+#div-158,
+#div-202 {
+  background-color: blue; }
+
+#div-173,
+#div-202 {
+  background-color: blue; }
+
+#div-188,
+#div-202 {
+  background-color: blue; }
+
+#div-203,
+#div-202 {
+  background-color: blue; }
+
+#div-114,
+#div-134 {
+  background-color: yellow; }
+
+#div-115,
+#div-134 {
+  background-color: yellow; }
+
+#div-116,
+#div-134 {
+  background-color: yellow; }
+
+#div-117,
+#div-134 {
+  background-color: yellow; }
+
+#div-118,
+#div-134 {
+  background-color: yellow; }
+
+#div-119,
+#div-134 {
+  background-color: yellow; }
+
+#div-99 {
+  border-left: 1px solid green;
+  background-color: yellow; }
+  #div-99 #div-99-1 {
+    height: 100%;
+    width: 100%;
+    clip-path: polygon(100% 0, 0 100%, 0 0);
+    border: 1px solid green;
+    background-color: green; }
+
+#div-129 {
+  border-left: 1px solid blue;
+  background-color: yellow; }
+  #div-129 #div-129-1 {
+    height: 100%;
+    width: 100%;
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+    border: 1px solid blue;
+    background-color: blue; }
+
+#piece-red-1,
+#piece-red-2,
+#piece-red-3,
+#piece-red-4 {
+  height: 40px;
+  width: 40px;
+  border-radius: 1000px;
+  background: linear-gradient(to right, #333333, #dd1818);
+  animation: scale-up 1s;
+  animation-fill-mode: both;
+  position: relative;
+  z-index: -10; }
+
+@keyframes scale-up {
+  0% {
+    transform: scale(0); }
+  100% {
+    transform: scale(1); } }
+
+@keyframes scale-down {
+  0% {
+    transform: scale(1); }
+  100% {
+    transform: scale(0); } }
+
+#piece-green-1,
+#piece-green-2,
+#piece-green-3,
+#piece-green-4 {
+  height: 40px;
+  width: 40px;
+  border-radius: 1000px;
+  background: linear-gradient(to right, #333333, #2cff01d0);
+  animation: scale-up 1s;
+  animation-fill-mode: both;
+  position: relative;
+  z-index: -10; }
+
+#questions {
+  background: linear-gradient(to left, #009fff, #ec2f4b);
+  padding: 20px 10px;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden; }
+  #questions #header {
+    height: 8%;
+    margin-bottom: 10px; }
+  #questions #question {
+    background-color: rgba(255, 165, 0, 0.65);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 7px red, 5px 10px 5px grey;
+    margin: 5px 5px;
+    padding: 0 20px;
+    flex-wrap: wrap;
+    overflow: hidden; }
+    #questions #question h1 {
+      font-size: 32px;
+      font-weight: 400; }
+  #questions section#answers {
+    margin: 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 0;
+    flex-wrap: wrap; }
+    #questions section#answers .temporary {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: orangered;
+      border-radius: 1000px;
+      flex-wrap: wrap;
+      margin: 30px 40px;
+      transition: transform 1s; }
+      #questions section#answers .temporary .answer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        background-color: transparent;
+        border-radius: 1000px;
+        border: none;
+        border-right: 1px solid red;
+        flex-wrap: wrap;
+        width: auto;
+        visibility: hidden; }
+        #questions section#answers .temporary .answer h1 {
+          cursor: default; }
+    #questions section#answers #full_answer {
+      display: flex;
+      width: 100%;
+      margin: 10px 10px 20px 10px; }
+      #questions section#answers #full_answer form {
+        width: 100%; }
+      #questions section#answers #full_answer #answer_input {
+        width: 100%;
+        border: none;
+        background-color: transparent;
+        height: 36px;
+        outline: none;
+        font-size: 28px;
+        color: black;
+        box-shadow: 0 5px 5px red;
+        padding: 0 10px; }
+
+@keyframes slide_left {
+  0% {
+    opacity: 0;
+    transform: translate(-50px); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes slide_right {
+  0% {
+    opacity: 1;
+    transform: translate(0); }
+  100% {
+    opacity: 0;
+    transform: translate(-50px); } }
+
+#answer_input::placeholder {
+  color: black;
+  font-size: 28px;
+  font-weight: inherit; }
+
+.check_button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 20px;
+  background-color: transparent;
+  border: none; }
+
+input[type='submit'] {
+  padding: 10px 20px;
+  font-size: 20px;
+  border-radius: 1000px;
+  border: none;
+  box-shadow: 0 0 10px 5px orange;
+  transition: all 0.5s;
+  background-color: lightgreen; }
+
+input[type='submit']:hover {
+  background-color: cyan;
+  transform: translateY(-10px); }
+
+/*# sourceMappingURL=style.css.map */

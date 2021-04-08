@@ -1,0 +1,676 @@
+body {
+    margin: 0;
+    padding: 0;
+    font: 14px 'Montserrat', Helvetica, Arial, sans-serif;
+}
+
+a {
+    color: #00b7ff;
+}
+
+#main-div {
+    // background-color: red;
+    display: flex;
+    // height: 100vh;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    // align-items: center;
+    border-radius: 10px;
+    padding: 10px 5px;
+    margin: 0;
+    position: relative;
+}
+
+#questions {
+    // float: right;
+    width: 45%;
+}
+
+#content {
+    display: flex;
+}
+
+// div {
+//     div:nth-of-type(1) {
+//         border-radius: 10px 0 0 0;
+//     }
+// }
+
+// div {
+//     div:nth-of-type(211) {
+//         border-radius: 0 0 0 10px;
+//     }
+// }
+
+// div {
+//     div:nth-of-type(15) {
+//         border-radius: 0px 10px 0 0;
+//     }
+// }
+
+// div {
+//     div:nth-of-type(225) {
+//         border-radius: 0 0 10px 0;
+//     }
+// }
+
+div {
+    div {
+        display: inline-flex;
+        background-color: white;
+        height: 58px;
+        width: 58px;
+        /* margin: 5px; */
+        justify-content: center;
+        align-items: center;
+        /* padding: 0; */
+        /* border-radius: 0; */
+        border: 0.1px solid rgba(0, 0, 0, 0.25);
+    }
+
+    #dice-1 {
+        background-color: magenta;
+        position: absolute;
+        left: -45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            cursor: pointer;
+            font-size: 28px;
+        }
+    }
+    #dice-2 {
+        background-color: magenta;
+        position: absolute;
+        right: -45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h1 {
+            cursor: pointer;
+            font-size: 28px;
+        }
+    }
+    #dice-3 {
+        background-color: magenta;
+        position: absolute;
+        left: -45px;
+        bottom: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h1 {
+            cursor: pointer;
+            font-size: 28px;
+        }
+    }
+    #dice-4 {
+        background-color: magenta;
+        position: absolute;
+        right: -45px;
+        bottom: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h1 {
+            cursor: pointer;
+            font-size: 28px;
+        }
+    }
+}
+
+#game {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // margin-right: 10px;
+    padding: 10px 60px;
+    width: 50%;
+    border-right: 1px solid black;
+    height: 100vh;
+    background: linear-gradient(to left, #ad5389, #3c1053);
+    overflow: hidden;
+}
+
+@for $i from 0 to 6 {
+    #div-#{($i * 15) + 1} {
+        background-color: red;
+        border: 1px solid rgb(255, 0, 0);
+    }
+}
+
+@for $i from 77 to 82 {
+    #div-#{$i} {
+        background-color: red;
+        border: 1px solid rgb(255, 0, 0);
+        // border: none;
+    }
+}
+
+@for $i from 1 to 7 {
+    #div-#{$i} {
+        background-color: red;
+        border: 1px solid rgb(255, 0, 0);
+        // border: none;
+    }
+}
+
+@for $i from 31 to 37 {
+    #div-#{$i} {
+        background-color: red;
+        border: 1px solid rgb(255, 0, 0);
+        // border: none;
+    }
+}
+
+@for $i from 46 to 52 {
+    #div-#{$i} {
+        background-color: red;
+        border: 1px solid rgb(255, 0, 0);
+        // border: none;
+    }
+}
+
+@for $i from 0 to 6 {
+    #div-#{($i * 15) + 3} {
+        background-color: red;
+        border: 1px solid rgb(255, 0, 0);
+        // border: none;
+    }
+}
+
+@for $i from 0 to 6 {
+    #div-#{($i * 15) + 4} {
+        background-color: red;
+        border: 1px solid rgb(255, 0, 0);
+        // border: none;
+    }
+}
+
+@for $i from 0 to 6 {
+    #div-#{($i*15) + 6} {
+        background-color: red;
+        border: 1px solid rgb(255, 0, 0);
+    }
+}
+
+// #div-17,
+// #div-20,
+// #div-62,
+// #div-65,
+// #div-26,
+// #div-29,
+// #div-71,
+// #div-74 {
+//     background-color: white;
+// }
+
+@for $i from 0 to 6 {
+    #div-#{($i*15) + 10} {
+        background-color: green;
+        border: 1px solid green;
+    }
+}
+
+@for $i from 0 to 6 {
+    #div-#{($i*15) + 15} {
+        background-color: green;
+        border: 1px solid green;
+    }
+}
+
+@for $i from 0 to 6 {
+    #div-#{($i*15) + 12} {
+        background-color: green;
+        border: 1px solid green;
+    }
+}
+
+@for $i from 0 to 6 {
+    #div-#{($i*15) + 13} {
+        background-color: green;
+        border: 1px solid green;
+    }
+}
+
+@for $i from 85 to 91 {
+    #div-#{$i} {
+        background-color: green;
+        border: 1px solid green;
+        // border: none;
+    }
+}
+
+@for $i from 10 to 16 {
+    #div-#{$i} {
+        background-color: green;
+        border: 1px solid green;
+        // border: none;
+    }
+}
+
+@for $i from 40 to 46 {
+    #div-#{$i} {
+        background-color: green;
+        border: 1px solid green;
+        // border: none;
+    }
+}
+
+@for $i from 55 to 61 {
+    #div-#{$i} {
+        background-color: green;
+        border: 1px solid green;
+        // border: none;
+    }
+}
+
+@for $i from 0 to 6 {
+    #div-#{($i*15) + 136} {
+        background-color: blue;
+        border: 1px solid blue;
+    }
+}
+
+@for $i from 0 to 6 {
+    #div-#{($i*15) + 141} {
+        background-color: blue;
+        border: 1px solid blue;
+    }
+}
+
+@for $i from 0 to 6 {
+    #div-#{($i*15) + 138} {
+        background-color: blue;
+        border: 1px solid blue;
+    }
+}
+
+@for $i from 0 to 6 {
+    #div-#{($i*15) + 139} {
+        background-color: blue;
+        border: 1px solid blue;
+    }
+}
+
+@for $i from 136 to 142 {
+    #div-#{$i} {
+        background-color: blue;
+        border: 1px solid blue;
+        // border: none;
+    }
+}
+
+@for $i from 166 to 172 {
+    #div-#{$i} {
+        background-color: blue;
+        border: 1px solid blue;
+        // border: none;
+    }
+}
+
+@for $i from 181 to 187 {
+    #div-#{$i} {
+        background-color: blue;
+        border: 1px solid blue;
+        // border: none;
+    }
+}
+
+@for $i from 211 to 217 {
+    #div-#{$i} {
+        background-color: blue;
+        border: 1px solid blue;
+        // border: none;
+    }
+}
+
+@for $i from 0 to 6 {
+    #div-#{($i*15) + 145} {
+        background-color: yellow;
+        border: 1px solid yellow;
+    }
+}
+
+@for $i from 0 to 6 {
+    #div-#{($i*15) + 147} {
+        background-color: yellow;
+        border: 1px solid yellow;
+    }
+}
+
+@for $i from 0 to 6 {
+    #div-#{($i*15) + 148} {
+        background-color: yellow;
+        border: 1px solid yellow;
+    }
+}
+
+@for $i from 0 to 6 {
+    #div-#{($i*15) + 150} {
+        background-color: yellow;
+        border: 1px solid yellow;
+    }
+}
+
+@for $i from 145 to 151 {
+    #div-#{$i} {
+        background-color: yellow;
+        border: 1px solid yellow;
+        // border: none;
+    }
+}
+
+@for $i from 175 to 181 {
+    #div-#{$i} {
+        background-color: yellow;
+        border: 1px solid yellow;
+        // border: none;
+    }
+}
+
+@for $i from 190 to 196 {
+    #div-#{$i} {
+        background-color: yellow;
+        border: 1px solid yellow;
+        // border: none;
+    }
+}
+
+@for $i from 220 to 226 {
+    #div-#{$i} {
+        background-color: yellow;
+        border: 1px solid yellow;
+        // border: none;
+    }
+}
+
+#div-97 {
+    margin: 0;
+    padding: 0;
+}
+
+#div-97-1 {
+    height: 100%;
+    width: 100%;
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+    border: 1px solid red;
+    background-color: red;
+}
+
+#div-97 {
+    background-color: green;
+}
+
+@for $i from 107 to 113 {
+    #div-#{$i},
+    #div-92 {
+        background-color: red;
+    }
+}
+
+#div-127-1 {
+    height: 100%;
+    width: 100%;
+    clip-path: polygon(0 100%, 100% 0, 0 0);
+    border: 1px solid red;
+    background-color: red;
+}
+
+#div-127 {
+    background-color: blue;
+}
+
+#div-113 {
+    border-left: 1px solid red;
+    height: 0;
+    width: 0;
+    border-color: green yellow blue red;
+    border-width: 30px;
+}
+
+@for $i from 1 to 7 {
+    #div-#{($i * 15) + 8},
+    #div-24 {
+        background-color: green;
+    }
+}
+
+@for $i from 0 to 6 {
+    #div-#{($i * 15) + 128},
+    #div-202 {
+        background-color: blue;
+    }
+}
+
+@for $i from 114 to 120 {
+    #div-#{$i},
+    #div-134 {
+        background-color: yellow;
+    }
+}
+
+#div-99 {
+    border-left: 1px solid green;
+    background-color: yellow;
+
+    #div-99-1 {
+        height: 100%;
+        width: 100%;
+        clip-path: polygon(100% 0, 0 100%, 0 0);
+        border: 1px solid green;
+        background-color: green;
+    }
+}
+
+#div-129 {
+    border-left: 1px solid blue;
+    background-color: yellow;
+
+    #div-129-1 {
+        height: 100%;
+        width: 100%;
+        clip-path: polygon(0 0, 0% 100%, 100% 100%);
+        border: 1px solid blue;
+        background-color: blue;
+    }
+}
+
+#piece-red-1,
+#piece-red-2,
+#piece-red-3,
+#piece-red-4 {
+    height: 40px;
+    width: 40px;
+    border-radius: 1000px;
+    background: linear-gradient(to right, #333333, #dd1818);
+    animation: scale-up 1s;
+    animation-fill-mode: both;
+    position: relative;
+    z-index: -10;
+}
+
+@keyframes scale-up {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes scale-down {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0);
+    }
+}
+
+#piece-green-1,
+#piece-green-2,
+#piece-green-3,
+#piece-green-4 {
+    height: 40px;
+    width: 40px;
+    border-radius: 1000px;
+    background: linear-gradient(to right, #333333, #2cff01d0);
+    animation: scale-up 1s;
+    animation-fill-mode: both;
+    position: relative;
+    z-index: -10;
+}
+
+#questions {
+    background: linear-gradient(to left, #009fff, #ec2f4b);
+    padding: 20px 10px;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    // width: 40%;
+
+    #header {
+        height: 8%;
+        margin-bottom: 10px;
+    }
+
+    #question {
+        background-color: rgba(255, 165, 0, 0.65);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 20%;
+        border-radius: 10px;
+        // border: 10px solid red;
+        box-shadow: 0 0 10px 7px red, 5px 10px 5px grey;
+        margin: 5px 5px;
+        padding: 0 20px;
+        flex-wrap: wrap;
+        overflow: hidden;
+        h1 {
+            font-size: 32px;
+            font-weight: 400;
+        }
+    }
+
+    section#answers {
+        margin: 10px 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 60px 0;
+        flex-wrap: wrap;
+
+        .temporary {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: orangered;
+            border-radius: 1000px;
+            flex-wrap: wrap;
+            margin: 30px 40px;
+            transition: transform 1s;
+            .answer {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 10px;
+                background-color: transparent;
+                border-radius: 1000px;
+                border: none;
+                border-right: 1px solid red;
+                flex-wrap: wrap;
+                // margin: 50px 50px;
+                width: auto;
+                visibility: hidden;
+
+                h1 {
+                    cursor: default;
+                }
+            }
+        }
+
+        #full_answer {
+            display: flex;
+            width: 100%;
+            margin: 10px 10px 20px 10px;
+
+            form {
+                width: 100%;
+            }
+            #answer_input {
+                width: 100%;
+                border: none;
+                background-color: transparent;
+                // border-bottom: 1px solid black;
+                height: 36px;
+                outline: none;
+                font-size: 28px;
+                color: black;
+                box-shadow: 0 5px 5px red;
+                padding: 0 10px;
+            }
+        }
+    }
+}
+
+@keyframes slide_left {
+    0% {
+        opacity: 0;
+        transform: translate(-50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+@keyframes slide_right {
+    0% {
+        opacity: 1;
+        transform: translate(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(-50px);
+    }
+}
+
+#answer_input::placeholder {
+    color: black;
+    font-size: 28px;
+    font-weight: inherit;
+}
+
+.check_button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px;
+    background-color: transparent;
+    border: none;
+}
+
+input[type='submit'] {
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 1000px;
+    border: none;
+    box-shadow: 0 0 10px 5px orange;
+    transition: all 0.5s;
+    background-color: lightgreen;
+}
+
+input[type='submit']:hover {
+    background-color: cyan;
+    transform: translateY(-10px);
+}
