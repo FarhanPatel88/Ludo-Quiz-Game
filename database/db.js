@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-const autoIncrement = require('mongoose-auto-increment')
+// const autoIncrement = require('mongoose-auto-increment')
 
 let uri = 'mongodb://localhost:27017/ludo_game'
 
@@ -13,7 +13,7 @@ let connection = mongoose.connect(uri, {
     // useMongoClient: true
 })
 
-autoIncrement.initialize(connection);
+// autoIncrement.initialize(connection);
 
 mongoose.connection.on('connected', () => {
     console.log('===============')
