@@ -8,9 +8,9 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 let connection = mongoose.connect(uri, {
-    // useNewUrlParser: true,
-    // useUnifiedTopology: true,
-    useMongoClient: true
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+    // useMongoClient: true
 })
 
 autoIncrement.initialize(connection);
