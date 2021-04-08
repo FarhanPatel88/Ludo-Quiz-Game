@@ -1,13 +1,17 @@
 const mongoose = require('mongoose')
 // const autoIncrement = require('mongoose-auto-increment')
 
+mongoose.set('useNewUrlParser', true)
+mongoose.set('useFindAndModify', false)
+mongoose.set('useCreateIndex', true)
+
 let uri = 'mongodb://localhost:27017/ludo_game'
 
 if (process.env.NODE_ENV === 'production') {
     uri = process.env.MONGODB_URI
 }
 
-let connection = mongoose.connect(uri, {
+mongoose.connect(uri, {
     useNewUrlParser: true,
     useUnifiedTopology: true
     // useMongoClient: true
