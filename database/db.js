@@ -7,7 +7,7 @@ mongoose.set('useCreateIndex', true);
 
 let uri = 'mongodb://localhost:27017/ludo_game';
 
-// const uri = 'mongodb+srv://farhan:12345@cluster0.y35pw.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
+// const uri = 'mongodb+srv://farhan:9004788819@cluster0.q0ssn.mongodb.net/ludo_game?retryWrites=true&w=majority'
 
 // const uri = 'mongodb://u0xzi9qgygzmouklw2yb:9dgFodVokRleGfFBWSyJ@bhjuf67nlbq8dpe-mongodb.services.clever-cloud.com:27017/bhjuf67nlbq8dpe'
 

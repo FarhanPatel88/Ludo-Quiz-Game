@@ -747,33 +747,32 @@ if (document.getElementById('modal')) {
         document.querySelector("#piece-red-2").style.zIndex = 0
         document.querySelector("#piece-red-3").style.zIndex = 0
         document.querySelector("#piece-red-4").style.zIndex = 0
-    }
-
-    if (localStorage.getItem('modaltext')) {
-        if (localStorage.getItem('modaltext').includes('Red')) {
-            number_1.childNodes[1].addEventListener('click', generate_number)
-
-            document.querySelector("#piece-red-1").style.zIndex = 0
-            document.querySelector("#piece-red-2").style.zIndex = 0
-            document.querySelector("#piece-red-3").style.zIndex = 0
-            document.querySelector("#piece-red-4").style.zIndex = 0
-        }
-        if (localStorage.getItem('modaltext').includes('Green')) {
-            number_2.childNodes[1].addEventListener('click', generate_number)
-
-            document.querySelector("#piece-green-1").style.zIndex = 0
-            document.querySelector("#piece-green-2").style.zIndex = 0
-            document.querySelector("#piece-green-3").style.zIndex = 0
-            document.querySelector("#piece-green-4").style.zIndex = 0
-        }
-    }
-    if (modalText.includes('Green')) {
+    } else if (modalText.includes('Green')) {
         number_2.childNodes[1].addEventListener('click', generate_number)
 
         document.querySelector("#piece-green-1").style.zIndex = 0
         document.querySelector("#piece-green-2").style.zIndex = 0
         document.querySelector("#piece-green-3").style.zIndex = 0
         document.querySelector("#piece-green-4").style.zIndex = 0
+    } else {
+        if (localStorage.getItem('modaltext')) {
+            if (localStorage.getItem('modaltext').includes('Red')) {
+                number_1.childNodes[1].addEventListener('click', generate_number)
+
+                document.querySelector("#piece-red-1").style.zIndex = 0
+                document.querySelector("#piece-red-2").style.zIndex = 0
+                document.querySelector("#piece-red-3").style.zIndex = 0
+                document.querySelector("#piece-red-4").style.zIndex = 0
+            }
+            if (localStorage.getItem('modaltext').includes('Green')) {
+                number_2.childNodes[1].addEventListener('click', generate_number)
+
+                document.querySelector("#piece-green-1").style.zIndex = 0
+                document.querySelector("#piece-green-2").style.zIndex = 0
+                document.querySelector("#piece-green-3").style.zIndex = 0
+                document.querySelector("#piece-green-4").style.zIndex = 0
+            }
+        }
     }
 
     let check_red, check_green = 0
@@ -783,7 +782,7 @@ if (document.getElementById('modal')) {
             check_red = localStorage.getItem('modaltext').includes('Red')
             check_green = localStorage.getItem('modaltext').includes('Green')
         }
-        if (modalText.includes('Red') || check_red) {
+        if (modalText.includes('Red')) {
             random = Math.floor(Math.random() * 6) + 1
             number_1.childNodes[1].textContent = random
             r_num = random
@@ -797,7 +796,7 @@ if (document.getElementById('modal')) {
             // n++;
             // c_red = Math.pow(10, n)
         }
-        if (modalText.includes('Green') || check_green) {
+        if (modalText.includes('Green')) {
             random = Math.floor(Math.random() * 6) + 1
             number_2.childNodes[1].textContent = random
             r_num = random
@@ -811,8 +810,22 @@ if (document.getElementById('modal')) {
             // n++;
             // c_green = Math.pow(20, n)
         }
-    }
 
+        if (modalText.includes('Wrong')) {
+            if (check_red) {
+                random = Math.floor(Math.random() * 6) + 1
+                number_1.childNodes[1].textContent = random
+                r_num = random
+                number_1.childNodes[1].removeEventListener('click', generate_number)
+            }
+            if (check_green) {
+                random = Math.floor(Math.random() * 6) + 1
+                number_2.childNodes[1].textContent = random
+                r_num = random
+                number_2.childNodes[1].removeEventListener('click', generate_number)
+            }
+        }
+    }
 }
 
 let new_modal = ''
