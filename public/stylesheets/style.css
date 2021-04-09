@@ -88,7 +88,6 @@ div #dice-4 {
   padding: 10px 60px;
   width: 50%;
   border-right: 1px solid black;
-  height: 100vh;
   background: linear-gradient(to left, #ad5389, #3c1053);
   overflow: hidden; }
 
@@ -1044,7 +1043,10 @@ div #dice-4 {
 #questions {
   background: linear-gradient(to left, #009fff, #ec2f4b);
   padding: 20px 10px;
-  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   margin: 0;
   overflow: hidden; }
   #questions #header {
@@ -1055,7 +1057,6 @@ div #dice-4 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 20%;
     border-radius: 10px;
     box-shadow: 0 0 10px 7px red, 5px 10px 5px grey;
     margin: 5px 5px;

@@ -131,7 +131,7 @@ div {
     padding: 10px 60px;
     width: 50%;
     border-right: 1px solid black;
-    height: 100vh;
+    // height: 100vh;
     background: linear-gradient(to left, #ad5389, #3c1053);
     overflow: hidden;
 }
@@ -531,7 +531,11 @@ div {
 #questions {
     background: linear-gradient(to left, #009fff, #ec2f4b);
     padding: 20px 10px;
-    height: 100vh;
+    // height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     margin: 0;
     overflow: hidden;
     // width: 40%;
@@ -546,7 +550,7 @@ div {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 20%;
+        // height: 20%;
         border-radius: 10px;
         // border: 10px solid red;
         box-shadow: 0 0 10px 7px red, 5px 10px 5px grey;

@@ -46,9 +46,9 @@ mongoose.connection.on('error', err => {
     console.log(`Mongoose connection error: ${err}`);
 });
 
-mongoose.connection.on('disconnected', () => {
-    console.log('Mongoose disconnected');
-});
+// mongoose.connection.on('disconnected', () => {
+//     console.log('Mongoose disconnected');
+// });
 
 
 const shutdown = (msg, callback) => {
