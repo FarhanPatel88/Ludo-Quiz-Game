@@ -11,7 +11,6 @@
 
 <body onload="loaddata();">
   <section id="content">
-
     <section id="game">
       <div id="main-div">
         <div id="dice-1">
@@ -28,26 +27,17 @@
         </div>
 
         <% for( let index = 1; index <= 225; index++ ) { %>
-
         <div id="div-<%= index %>"></div>
-
         <% } %>
       </div>
     </section>
 
     <section id="questions">
-
-      <div id="header">
-
-      </div>
-
+      <div id="header"></div>
       <div id="question">
         <h1><%= quest.questions %></h1>
       </div>
-
       <section id="answers">
-
-
         <div class="temporary">
           <div class="answer">
             <h1><%= quest.answer_1 %> </h1>
@@ -106,7 +96,6 @@
           <button onclick="closeDialog();">Ok</button>
         </dialog>
         <% } %>
-
       </section>
     </section>
   </section>
