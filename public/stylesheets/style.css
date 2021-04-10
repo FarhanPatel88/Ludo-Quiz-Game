@@ -1163,11 +1163,9 @@ input[type='submit']:hover {
     height: 300px;
     width: 300px; }
   #game {
-    width: auto;
-    height: 50vh; }
+    width: auto; }
   #questions {
-    width: auto;
-    height: 50vh; }
+    width: auto; }
   div div {
     height: 18px;
     width: 17px; }
@@ -1199,11 +1197,9 @@ input[type='submit']:hover {
     height: 700px;
     width: 700px; }
   #game {
-    width: auto;
-    height: auto; }
+    width: auto; }
   #questions {
-    width: auto;
-    height: auto; }
+    width: auto; }
   div div {
     height: 45px;
     width: 43px; }
