@@ -828,7 +828,7 @@ if (document.getElementById('modal')) {
     }
 }
 
-let new_modal = ''
+// let new_modal = ''
 
 function savedata() {
     let local_red = c_red
@@ -1012,7 +1012,7 @@ function loaddata() {
     // }
 }
 
-window.onunload = window.onbeforeunload = function (event) {
+window.onbeforeunload = function (event) {
     if (localStorage.length == 0) {} else {
         savedata()
     }
