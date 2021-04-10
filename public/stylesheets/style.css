@@ -37,7 +37,7 @@ div div {
 div #dice-1 {
   background-color: magenta;
   position: absolute;
-  left: -45px;
+  left: -30px;
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -48,7 +48,7 @@ div #dice-1 {
 div #dice-2 {
   background-color: magenta;
   position: absolute;
-  right: -45px;
+  right: -30px;
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -59,7 +59,7 @@ div #dice-2 {
 div #dice-3 {
   background-color: magenta;
   position: absolute;
-  left: -45px;
+  left: -30px;
   bottom: 10px;
   display: flex;
   justify-content: center;
@@ -71,7 +71,7 @@ div #dice-3 {
 div #dice-4 {
   background-color: magenta;
   position: absolute;
-  right: -45px;
+  right: -30px;
   bottom: 10px;
   display: flex;
   justify-content: center;
@@ -1155,5 +1155,117 @@ input[type='submit'] {
 input[type='submit']:hover {
   background-color: cyan;
   transform: translateY(-10px); }
+
+@media screen and (min-width: 300px) {
+  #content {
+    flex-direction: column; }
+  #main-div {
+    height: 300px;
+    width: 300px; }
+  #game {
+    width: auto;
+    height: 50vh; }
+  #questions {
+    width: auto;
+    height: 50vh; }
+  div div {
+    height: 18px;
+    width: 17px; }
+  #div-113 {
+    border-width: 10px; } }
+
+@media screen and (min-width: 500px) {
+  #main-div {
+    height: 500px;
+    width: 500px; }
+  div div {
+    height: 32px;
+    width: 30px; }
+  #div-113 {
+    border-width: 17px; } }
+
+@media screen and (min-width: 700px) {
+  #main-div {
+    height: 600px;
+    width: 600px; }
+  div div {
+    height: 38px;
+    width: 36px; }
+  #div-113 {
+    border-width: 19px; } }
+
+@media screen and (min-width: 850px) {
+  #main-div {
+    height: 700px;
+    width: 700px; }
+  #game {
+    width: auto;
+    height: auto; }
+  #questions {
+    width: auto;
+    height: auto; }
+  div div {
+    height: 45px;
+    width: 43px; }
+  #div-113 {
+    border-width: 22px; } }
+
+@media screen and (min-width: 992px) {
+  #content {
+    flex-direction: row; }
+  #main-div {
+    height: 500px;
+    width: 500px; }
+  #game {
+    width: 50%;
+    height: auto; }
+  #questions {
+    width: 45%;
+    height: auto; }
+  div div {
+    height: 32px;
+    width: 30px; }
+  #div-113 {
+    border-width: 17px; } }
+
+@media screen and (min-width: 1200px) {
+  #main-div {
+    height: 610px;
+    width: 610px; }
+  div div {
+    height: 39px;
+    width: 37px; }
+  #div-113 {
+    border-width: 20px; } }
+
+@media screen and (min-width: 1360px) {
+  #main-div {
+    height: 700px;
+    width: 700px; }
+  div div {
+    height: 45px;
+    width: 43px; }
+  #div-113 {
+    border-width: 23px; } }
+
+@media screen and (min-width: 1560px) {
+  #main-div {
+    height: 800px;
+    width: 800px; }
+  div div {
+    height: 52px;
+    width: 49px; }
+  #div-113 {
+    border-width: 26px; } }
+
+@media screen and (min-width: 1860px) {
+  #main-div {
+    height: 900px;
+    width: 900px; }
+  div div {
+    height: 58px;
+    width: 55px; }
+  #div-113 {
+    border-width: 29px; } }
 
 /*# sourceMappingURL=style.css.map */

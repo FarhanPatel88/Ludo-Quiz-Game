@@ -22,7 +22,7 @@ try {
     mongoose.connect(
         uri, {
             // useNewUrlParser: true,
-            // useUnifiedTopology: true
+            useUnifiedTopology: true,
             // useMongoClient: true
             dbName: 'ludo_game'
         },
@@ -45,11 +45,6 @@ mongoose.connection.once("open", () => console.log("Connected to DB!"));
 mongoose.connection.on('error', err => {
     console.log(`Mongoose connection error: ${err}`);
 });
-
-// mongoose.connection.on('disconnected', () => {
-//     console.log('Mongoose disconnected');
-// });
-
 
 const shutdown = (msg, callback) => {
     mongoose.connection.close(() => {
