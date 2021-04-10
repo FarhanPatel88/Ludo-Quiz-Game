@@ -702,16 +702,16 @@ for (var i = 0; i < ans_parent.length; i++) {
 
 function slideIn() {
     this.style.transform = 'scale(1.1)'
-    this.children[0].style.animation = 'slide_left 0.5s';
+    this.children[0].style.animation = 'slide_left 0.25s';
     this.children[0].style.visibility = 'visible'
 }
 
 function slideOut() {
     this.style.transform = 'scale(1)'
-    this.children[0].style.animation = 'slide_right 0.5s'
+    this.children[0].style.animation = 'slide_right 0.25s'
     setTimeout(() => {
         this.children[0].style.visibility = null
-    }, 500)
+    }, 250)
 }
 
 let elem_ans = document.getElementsByClassName('answer')
@@ -1012,7 +1012,7 @@ function loaddata() {
     // }
 }
 
-window.unload = window.onbeforeunload = function (event) {
+window.onunload = window.onbeforeunload = function (event) {
     if (localStorage.length == 0) {} else {
         savedata()
     }
