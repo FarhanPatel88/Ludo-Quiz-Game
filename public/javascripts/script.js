@@ -1012,7 +1012,7 @@ function loaddata() {
     // }
 }
 
-window.onbeforeunload = function (event) {
+window.unload = window.onbeforeunload = function (event) {
     if (localStorage.length == 0) {} else {
         savedata()
     }
